@@ -1,0 +1,43 @@
+body {
+	background: black;
+}
+
+
+.firstHalf {
+	display: flex;
+	color: white;
+	height: 50vh;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.p1 {
+	font-size: 2em;
+	transition: all 1s;
+	font-family: 'Poiret One', cursive;
+}
+
+
+.p2 {
+	color: red;
+	display: flex;
+	height: 50vh;
+	justify-content: center;
+	/*align-items: center;*/
+	text-decoration: line-through;
+	transition: transform 5s;
+	font-family: 'Poiret One', cursive;
+}
+
+
+div:hover + .p2 {
+	transform: scale(6);
+	text-decoration: none;
+	color: white;
+}
+
+div:hover > .p1 {
+	transform: scale(1.5);
+	color: green;
+}
